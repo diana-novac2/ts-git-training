@@ -5,7 +5,7 @@ export const computeFibonacciNumber = (position: number | null, recursion: boole
     }
 
     if (recursion) {
-        return recursiveFibonacci(1, 1, notNullPosition - 2);
+        return recursiveFibonacci(notNullPosition);
     }
 
     if (notNullPosition === 0) {
